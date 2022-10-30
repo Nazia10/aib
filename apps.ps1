@@ -1,6 +1,6 @@
 write-host "AIB customization installing chrome"
 try {
-    Start-Process -filepath "C:\apps\ChromeSetup.exe" -Wait -ErrorAction Stop 
+    Start-Process -filepath "C:\apps\ChromeSetup" -Wait -ErrorAction Stop 
       write-host "chrome installed successfully"
     }
 catch {
@@ -8,5 +8,3 @@ catch {
     write-host "Error installing chrome: $ErrorMessage"
 }
 write-host "AIB customization chrome installation done."
-
-
